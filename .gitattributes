@@ -1,3 +1,5 @@
-# Encrypt sensitive files
-terraform.tfvars filter=git-crypt diff=git-crypt
-*.yaml filter=git-crypt diff=git-crypt variables.tf
+# Git-crypt configuration
+*.tfvars filter=git-crypt diff=git-crypt
+*.yaml filter=git-crypt diff=git-crypt
+variables.tf filter=git-crypt diff=git-crypt
+secret*.tf filter=git-crypt diff=git-crypt
