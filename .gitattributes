@@ -1,5 +1,14 @@
-# Git-crypt configuration
+# Git-crypt encryption rules
 *.tfvars filter=git-crypt diff=git-crypt
 *.yaml filter=git-crypt diff=git-crypt
 variables.tf filter=git-crypt diff=git-crypt
 secret*.tf filter=git-crypt diff=git-crypt
+
+# DO NOT encrypt these
+.gitattributes !filter !diff
+.gitignore !filter !diff
+LICENSE !filter !diff
+README.md !filter !diff
+*.md !filter !diff
+*.py !filter !diff
+*.txt !filter !diff
