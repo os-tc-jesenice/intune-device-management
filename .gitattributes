@@ -1,7 +1,6 @@
 # Git-crypt encryption rules
 *.tfvars filter=git-crypt diff=git-crypt
 *.yaml filter=git-crypt diff=git-crypt
-variables.tf filter=git-crypt diff=git-crypt
 secret*.tf filter=git-crypt diff=git-crypt
 
 # DO NOT encrypt these
